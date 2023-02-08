@@ -48,7 +48,7 @@ function App() {
           </Card>
         </PageContent>
       </Page>
-      <FooterHot>example footer content</FooterHot>
+      <FooterHot>(c) 1987 Paul Verhoeven</FooterHot>
     </>
   )
 }
