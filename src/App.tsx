@@ -19,35 +19,31 @@ function App() {
   return (
     <>
       <Header alignSelf='center' justify='center' direction='row'>
-        <Image 
+        {/* <Image 
           imageDark={new URL(`./assets/logo-dark.png`, import.meta.url)} 
           imageLight={new URL(`./assets/logo-light.png`, import.meta.url)}
-        />
-        <Heading level={1}>Example App Name</Heading>
+        /> */}
+        {/* <Heading 
+          level={1} 
+          contentEditable={true} 
+          style={{fontSize: '13vw'}}
+          className='synthwave'
+        >
+          Robocop 1987
+        </Heading> */}
+        <div className='synthwave' contentEditable={true}>Robocop 1987</div>
       </Header>
 
-      <Page kind='wide'> 
+      <Page kind='narrow'> 
         <PageContent  direction='row-responsive' >
           <Card pad={'medium'}>
             
-            <Heading level={3}>What is this?</Heading>
-            <Text textAlign='justify'>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor aperiam maxime dolores enim commodi magnam tempore obcaecati dicta non dignissimos, eligendi similique qui. Sequi maiores asperiores vitae culpa expedita ipsam.
-            </Text>
-            
-            <Heading level={3}>CodeBox</Heading>
-            <Text textAlign='justify'>
-              You can use this code area to display `code` blocks.<br/>
-              <br/>
-            </Text>
             <CodeBox>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo optio asperiores exercitationem est praesentium itaque aut quia ab repellendus corporis excepturi, sint ullam quaerat perferendis, earum id quidem. Doloremque, provident.
+              Directive 1: "Serve the public trust" <br/>
+              Directive 2. "Protect the innocent" <br/>
+              Directive 3. "Uphold the law" <br/>
+              Directive 4. (Classified) 0xCAFEBABE system test... const t = ut * 1000; 0xCAFEBABE 100101000 JIFF Interchange Format #@$$
             </CodeBox>
-
-            <Heading level={3}>TypescriptHighlighter</Heading>
-            <TypescriptHighlighter>
-              {codeLiteral}
-            </TypescriptHighlighter>
 
           </Card>
         </PageContent>
